@@ -30,7 +30,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY All  classes patna [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /AKKI")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY DEEPAK [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /AKKI")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
