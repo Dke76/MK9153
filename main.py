@@ -30,7 +30,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY all  classes patna [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /AKKI")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY All  classes patna [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /AKKI")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by all classes patna")
+                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by all classes patna❤️**")
                     
                     
                     res_file = await helper.download_video(url, cmd, name)
